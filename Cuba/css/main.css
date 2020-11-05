@@ -1,0 +1,350 @@
+.body{
+	font-family: titillium web regular;
+}
+/*==========Голова===========*/
+.header{
+	background-color: #87509c;
+	width: 100%;
+}
+/*======Переопределение стиля кнопок=====*/
+	@media (min-width:768px){
+		button{
+			padding:0 80px;
+		}	
+	}
+/*==========Общая строка куба и меню===========*/
+.cuba{
+	position: relative;
+	width: 50%;
+	padding-top: 58px;
+}
+.menu{
+	position: relative;
+	width: 50%;
+	padding-top: 58px;
+}
+/*==========Кнопка меню "Home"===========*/
+.active-home a{
+	background-color: #643a79;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+/*==========Отступы между пунктами меню===========*/
+.nav-item{
+	padding-left: 43px;
+	text-transform: uppercase;
+}
+/*==========Контент головной части===========*/
+.text-header{
+	color:white;
+	text-align: center;
+	font-size: 28.16pt;
+	padding-top: 100px
+}
+/*==========Колонка кнопки===========*/
+.btn-work {
+	text-align: center;
+	padding:54px 0 145px 0;
+}
+/*==========Параметры кнопки===========*/
+.btn-work button{
+	background-color: #eb7d4b;
+	color:white;
+	border:none;
+	border-radius: 5px;
+	box-shadow: 0 3px #c86a40;
+	font-size:20px;
+	height: 70px;
+}
+/*==========Заголовок зеленой секции===========*/
+.green-title{
+	text-align: center;
+	color:white;
+	padding-top: 120px;
+}
+/*==========фон зеленой секции===========*/
+.green{
+	background-color: #17c2a4;
+}
+/*==========Линия под заголовком===========*/
+.green-line{
+	text-align: -webkit-center;
+	padding-top: 21px;
+	padding-bottom: 23px;
+}
+/*==========Контент зеленой секции===========*/
+.green-content{
+	text-align: -webkit-center;
+	color:white;
+	padding-bottom: 83px;
+}
+/*==========Описание под картинками===========*/
+.green-picture{
+	align-items: baseline;
+	padding-bottom: 57px;
+	text-align: -webkit-center;
+	color:white;
+}
+/*==========Картинки зеленой секции===========*/
+.green-picture img{
+	position: relative
+	width: 100%;
+}
+/*======Заголовки под картинками========*/
+.green-picture h2{
+	padding-top: 57px;
+	font-size: 14pt;
+	text-transform: uppercase;
+	margin: 0px;
+	padding-bottom: 28px;
+}
+/*===Фон серой секции===*/
+.grey{
+	background-color: #e7f1f8;	
+}
+/*==========Заголовок серой секции===========*/
+.grey-title{
+	color:#3c4761;
+	text-align: center;
+	padding-top: 120px;
+	font-size: 30pt;
+	font-weight: bold;
+}
+/*==========Линия под заголовком===========*/
+.grey-line{
+	text-align: -webkit-center;
+	padding-top: 22px;
+	padding-bottom: 25px;
+}
+/*==========Описание над картинками===========*/
+.grey-text{
+	color:#3c4761;
+	text-align: center;
+	padding-bottom: 78px;
+	font-size: 12pt;
+}
+/*==========Картинки серые===========*/
+.grey-picture{
+	text-align: center;
+	padding-bottom: 41px;
+	position: relative
+	width: 100%;
+}
+.grey-content img{
+	position: relative
+	width: 100%;
+}
+.grey-content h3{
+	padding: 41px 0 0 0;
+}
+/*=======Цвет профессий=========*/
+.profession{
+	color:#30bae7;
+}
+/*==========Имена серая секция===========*/
+.grey-names h3{
+	color:#3c4761;
+	text-align: center;
+	padding-bottom: 16px;
+}
+/*==========Текст серая секция===========*/
+.grey-names p{
+	color:#3cbee8;
+	text-align: center;
+	padding-bottom:30px;
+}
+/*==========Ссылки серая секция===========*/
+.grey-links{
+	padding: 29px 0 127px 0;
+}
+
+/*==========Заголовок белая секция===========*/
+/*.diagramm1{
+	margin-top: 50px;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	border: 13px solid #30bae7;
+	border-top: 13px solid #dfe8ed;
+}*/
+
+/*====Фон желтой секции===*/
+.yellow{
+	background-color: #ffdd99;	
+}
+/*==========Заголовок желтая секция===========*/
+.yellow-title{
+	font-size: 28.16pt;
+	font-weight: bold;
+	padding-top:120px;
+	text-align: center;
+	color:#393939;
+}
+/*==========Линия желтая секция===========*/
+.yellow-line{
+	padding: 21px 0 23px 0;
+	text-align: -webkit-center;
+}
+/*==========Текст желтая секция===========*/
+.yellow-text{
+	text-align: center;
+	padding-bottom: 42px;
+}
+/*==========Кнопки желтая секция===========*/
+.yellow-button{
+	justify-content: center;
+	padding-bottom: 62px;
+}
+.yellow-button button{
+	border: none;
+	background-color: #ebc985;
+	width: 100%;
+	height:38px;
+	padding:0;
+}
+/*==========Картинки желтая секция===========*/
+.yellow-picture{
+	position: relative;
+	width: 100%;
+}
+/*=====Текст под фото желтая секция=====*/
+.text-picture{
+	padding:32px 0px 64px 0px;
+	text-align: center;
+}
+/*==========Колонка кнопки желтая секция===========*/
+.yellow-row{
+	padding-bottom: 109px;
+	text-align: center;
+}
+/*==========Кнопка желтая секция===========*/
+.yellow-tap{
+	background-color: #17c2a4;
+	color:white;
+	border:none;
+	border-radius: 5px;
+	box-shadow: 0 3px #14a58c;
+	height: 70px;
+	font-size:20px;
+}
+/*=====Белая кнопка меню желтая секция=====*/
+.white-button button{
+	background-color: #fff;
+	border:none;
+}
+/*====Размер белой кнопки меню желтая секция=====*/
+.white-button{
+	padding: 0 5px;
+}
+/*====Размер кнопок меню желтая секция=====*/
+.yellow-btn{
+	padding: 0 5px;
+}
+/*==========Розовая секция===========*/
+.pink{
+	background-color: #d74680;
+	color:white;
+}
+.pink-header{
+	padding: 120px 0 0 0;
+	color:white;
+	font-weight: bold;
+	font-size: 28.16pt;
+	text-align: center;
+}
+/*====Линия розовая секция=====*/
+.pink-line{
+	text-align: -webkit-center;
+	padding: 21px 0 23px 0;
+}
+/*====Отступы в контенте 1=====*/
+.pink-content1{
+	padding:71px 0 143px 0; 
+}
+/*====Цвет профессий=====*/
+.pink-profession{
+	color:#fac996;
+}
+/*====Параметры текста имен=====*/
+.pink-names{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/*====Отступы в контенте 2=====*/
+.pink-content2{
+	padding-bottom: 130px;
+}
+/*====Параметры текста карточек=====*/
+.card-text{
+	font-weight: lighter;
+	font-style: oblique;
+}
+/*====Синяя секция=====*/
+.blue{
+	background-color: #3c5499;
+	color:white;	
+}
+/*====Линия синяя секция=====*/
+.blue-line{
+	text-align: -webkit-center;
+	padding: 21px 0 23px 0;
+}
+/*====Отступ от адреса=====*/
+.blue-address{
+	padding-bottom: 80px;
+}
+/*====Отступ между формой name=====*/
+.name{
+	padding-bottom: 27px;
+}
+/*====Отсутп между формой email=====*/
+.email{
+	padding-bottom: 27px;
+}
+/*====Параметры загаголовка=====*/
+.blue-header{
+	padding: 120px 0 0 0;
+	font-weight: bold;
+	font-size: 28.16pt;
+}
+/*====Фон форм заполнения=====*/
+.form-control{
+	background-color:#273a71;
+	border: none;
+}
+/*====Параметры кнопки=====*/
+.blue-button button{
+	background-color: #30bae7;
+	color:white;
+	border:none;
+	border-radius: 5px;
+	box-shadow: 0 3px #299ec5;
+	height: 70px;
+	font-size:20px;
+}
+/*====Отступы кнопки=====*/
+.blue-button{
+	padding:59px 0px 115px 0px;
+}
+/*====Фон и отступы footer=====*/
+.footer{
+	background-color:  #344b8e;
+	padding: 47px 0px 47px 0px;
+}
+/*===Цвет ссылок===*/
+.list-inline a{
+	color:white;
+}
+/*===Выравнивание ссылок===*/
+.list-inline{
+	width: 100%;
+    justify-content:space-evenly;
+}
+/*===Цвет ссылки на twitter===*/
+.footer-twitter a{
+	color:#30bae7;
+}
+/*===Отмена подчеркивания ссылок===*/
+.footer-link a{
+	text-decoration: none;
+}
