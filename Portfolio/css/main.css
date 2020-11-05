@@ -1,0 +1,118 @@
+/*===Цвет фона===*/
+.body{
+	background-color: #f8f8f8;
+	font-family: Merriweather;
+}
+/*===Отступы главной иконки===*/
+.symbol{
+	padding:50px 0 27px;
+}
+/*===Переопределение отступов===*/
+@media(min-width:768px){
+	.symbol{ padding-top:125px;
+	}
+}
+/*===Отсутпы и шрифт заголовка===*/
+.main-header{
+	padding-bottom: 13px;
+	margin:0;
+}
+.main-header h1{
+	font-size: 25pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin:0;
+	
+}
+/*===Отступы и шрифты второй части заголовка===*/
+.secondary h2{
+	font-size: 20pt;
+	padding-bottom: 0px;
+	letter-spacing: 11px;
+	font-weight: 400;
+	font-family: MicrosoftHimalaya;
+	margin:0;
+	padding-bottom: 80px;
+}
+/*===Отступы и шрифты слоган===*/
+.row h3{
+	padding-bottom: 34px;
+	color:#424242;
+	font-size: 25pt;
+	font-weight: 300;
+}
+/*===Параметры таймера===*/
+.border{
+	font-size: 18pt;
+	padding:35px 0 29px;
+	text-transform: uppercase;
+	background-color: white;
+	color:#515151;
+	font-weight: 100;
+}
+/*===Цвет цифр===*/
+.color{
+	color: #ff9211;
+	font-size: 50pt;
+	font-weight: 300;
+}
+/*===Строка ввода текста===*/
+.input-group{
+	padding:39px 0 29px;
+	font-family: OpenSans;
+}
+/*===Отмена закруглений строки ввода===*/
+.form-control{
+	border-radius: 0px; 
+}
+/*===Кнопка строки ввода===*/
+.btn{
+	background-color: #ff9211;
+	border-radius: 0px; 
+	color: white;
+	text-transform: uppercase;
+	border-color: #ccc;
+	width: 138px;
+}
+/*===Параметры иконок===*/
+.social-icons a{
+	text-decoration:none;
+	padding:10px;
+}
+/*===Параметры иконок футера===*/
+.social-links{
+	padding:107px 0 20px;
+}
+.social-links a{
+	text-decoration:none;
+}
+/*===Отступ от первой иконоки футера===*/
+.image1{
+	padding-right: 3px;
+}
+/*===Вертикальная полоса между иконками===*/
+.image{
+	border-left: 1px solid #e3e3e3;
+	padding:0 6px 3px 11px;
+}
+/*===Параметры текста футера===*/
+.text-footer{
+	color:#a6a6a6;
+	font-size: 14pt;
+}
+/*===Отступ между параграфами футер===*/
+.text-footer p{
+	margin: 0;
+}
+/*===Цвет выделенных символов===*/
+.text-footer span{
+	color:#fea030;
+}
+/*===Размер выделенных символов===*/
+.footer-size{
+	text-transform: uppercase;
+}
+/*===Нижний отступ===*/
+.footer-position{
+	padding-bottom: 126px;
+}

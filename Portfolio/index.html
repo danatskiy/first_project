@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body class="body">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="symbol col-12 text-center">
+						<img src="img/symbol.png" alt="">
+					</div>
+				</div>
+				<div class="row main-header">
+					<div class="col text-center">
+						<h1>
+							Portfolio
+						</h1>
+					</div>
+				</div>
+				<div class="row secondary">
+					<div class="col-12 text-center">
+						<h2>
+							Creative
+						</h2>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h3 class="phrase">
+							We our Currently improving our site
+						</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 text-center">
+						<p class="border">
+							<span class="color day">
+								0
+							</span> 
+							<br>
+								Days
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-6 text-center">
+						<p class="border">
+							<span class="color hours" >
+								0
+							</span> 
+							<br> 
+								Hours
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-6 text-center">
+						<p class="border">
+							<span class="color minutes">
+								0
+							</span>
+							<br>
+								Minutes
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-6 text-center">
+						<p class="border">
+							<span class="color second">
+								0
+							</span>
+							<br>
+								Seconds
+						</p>
+					</div>					
+				</div>
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Newsletter"  aria-describedby="button-addon2">
+					<div class="input-group-append">
+					<button class="btn btn-outline-secondary" type="button">Submit</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="social-icons col-md-12 text-center">
+						<a href="#">
+							<img src="img/facebook.png" alt="">
+						</a>
+						<a href="#">
+							<img src="img/twitter.png" alt="">
+						</a>
+						<a href="#">
+							<img src="img/google.png" alt="">
+						</a>
+						<a href="#">
+							<img src="img/dribble.png" alt="">
+						</a>
+						<a href="#">
+							<img src="img/pinterest.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="social-links col-md-12 text-center">
+						<a href="#">
+							<img class="image1" src="img/f.png">
+						</a>
+						<a href="#">
+							<img class="image" src="img/tw.png">
+						</a>
+						<a href="#">
+							<img class="image" src="img/ing.png">
+						</a>
+						<a href="#">
+							<img class="image" src="img/pint.png">
+						</a>
+						<a href="#">
+							<img class="image" src="img/drib.png">
+						</a>
+						<a  href="#">
+							<img class="image" src="img/t.png">
+						</a>					
+					</div>	
+				</div>
+				<div class="row ">
+					<div class="col text-footer text-center">
+						<p>
+							Portfolio with Icon by <span class="footer-size">Digitudes</span>
+						</p>
+					</div>
+				</div>
+				<div class="row footer-position">
+					<div class="col text-footer text-center">
+						<p>
+							© Copyright <span>2015</span> @ Republic.All Rights Reserved
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>
+			var secBlock = document.querySelector('.second')
+			var minBlock = document.querySelector('.minutes')
+			var hoursBlock = document.querySelector('.hours')
+			var dayBlock = document.querySelector('.day')
+			var phraseBlock = document.querySelector('.phrase')
+
+			function tick(){
+				//Новая дата
+				var date1 = new Date();
+				//Дата старта отсчета
+				var date2 = new Date("09/25/2020 12:39:30");
+				//Разница между датами
+		        var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+		        //Избавимся от милисекунд
+		     	var diffSeconds = Math.floor((timeDiff%(1000 * 60)) / 1000)
+				
+				var diffMinutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60))
+				
+				var diffHours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+
+				var diffDays = Math.floor(timeDiff/ (1000 * 60 * 60 * 24))
+			
+			 	secBlock.innerHTML = diffSeconds
+			 	+ ' '
+			 	minBlock.innerHTML = diffMinutes + ' '
+			 	hoursBlock.innerHTML = diffHours + ' '
+			 	dayBlock.innerHTML = diffDays  + ' '
+			 	
+			 	if (date2 < date1)
+			 	phraseBlock.innerHTML = 'Our site is ready for use '
+
+			}
+
+			let timerId = setInterval(tick,1000)
+
+
+		</script>
+	</body>
+</html>
