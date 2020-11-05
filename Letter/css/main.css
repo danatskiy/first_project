@@ -1,0 +1,203 @@
+/*===Цвет общего фона===*/
+.body{
+	background-color: #f0f2ea;
+	margin: 10px;
+}
+/*===Рамка контейнера===*/
+.container{
+	border:1px solid #e5e5e5;
+	box-shadow: 0 0 10px 
+}
+.header-container{
+	border: none;
+	box-shadow:none;
+}
+/*===Отступы логотипа===*/
+.logo{
+	padding-top:40px;
+	width: 100%;
+}
+/*===Отступы линий логотипа===*/
+.logo-line{
+	margin: auto;
+	height: 2px;
+}
+
+/*======Переопределение стиля линий логотипа=====*/
+	@media (min-width:768px){
+		 .line1{
+			float:right;
+		}	
+	}
+	@media (min-width:768px){
+		 .line2{
+			float:left;
+		}	
+	}
+/*===Заголовок под логотипом===*/
+.header-title{
+	padding:35px 0 40px;
+	font-size: 22pt;
+}
+/*===Параметры текста===*/
+.header-title p{
+	text-transform: uppercase;
+	color: #898c7f;
+}
+.card{
+	border: none;
+	border-radius: 0px;
+}
+/*===Параметры фото sheeps===*/
+.image {
+	position: relative;
+}
+/*===Общие параметры текста на фото===*/
+.content{
+	color:white;
+	width: 100%;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+/*===Заголовок summer===*/
+.content h1{
+	font-size: 50pt;
+	margin: 0;
+	padding-bottom: 25px;
+	letter-spacing: 11px;
+	text-transform: uppercase;
+}
+	@media (max-width:500px){
+		 .content h1{
+			font-size: 20pt;
+		}
+	}
+	@media (max-width:400px){
+		 .content h1{
+			font-size: 15pt;
+			letter-spacing: 1px;
+			padding-top:20px;
+		}
+		 .content p{
+			font-size: 15pt;
+			letter-spacing: 1px;
+		}
+	}
+	
+/*===Переопределение размеров текста на фото===*/
+/*	@media (max-width:768px){
+		 .content{
+			top:10%;
+		}	
+	}
+	@media (min-width:768px){
+		 .content{
+			top:25%;
+		}	
+	}
+	@media (max-width:500px){
+		 .content{
+			top:0;
+		}	
+	}
+*/
+/*===Параметры линии на фото===*/
+.header-line{
+	margin: 0 auto;
+}
+/*===Абзац под линией на фото===*/
+.under-line{
+	padding-top: 25px;
+	font-size: 20pt;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+/*===Общий заголовок h2 для фото карточек===*/
+.main h2{
+	padding:50px 0 40px;
+	color: #484a43;
+	text-transform: uppercase;
+	font-size: 40pt;
+	letter-spacing: 2px;
+}
+.card-body{
+	padding: 20px 0 0 ;
+}
+/*===Отмена фона за фото===*/
+.card{
+	background-color: inherit;
+}
+/*===Зеленые заголовки контент===*/
+.card h3,h4{
+	color: #6d7e44;
+	font-weight: bold;
+}
+/*===Отмена скругленных углов фото===*/
+.card img{
+	border-radius:0px;
+}
+.card p{
+	font-size: 14pt;
+	text-align: left;
+}
+/*===Отступы карточек ===*/
+.image-content{
+	padding:0 15px;
+}
+/*===Параметры текста карточек===*/
+.card-text{
+	padding-top: 14px;
+}
+/*===Третья карточка===*/
+.card-third{
+	padding: 40px 30px 25px;
+}
+/*===Линия после карточек===*/
+.footer-line {
+	padding: 0 30px 0;
+}
+/*===Параметры линии===*/
+.footer-line hr{
+	border-color:#e5e5e5;
+	border-width: 2px;
+	padding-bottom: 40px;
+}
+/*===Параметры адреса в футере===*/
+.footer-address{
+	padding:0 30px 40px;
+}
+.footer-address span{
+	color: #6d7e44;
+}
+/*===Отмена оформления иконок соц сетей===*/
+.social-icons a{
+	text-decoration:none;
+}
+/*===Отступы изображений иконок===*/
+.social-icons img{
+	padding:0 4px 16px;
+}
+/*===Цвет ссылок в футере===*/
+.link-color{
+	color:#6d7e44;
+	padding:0 15px;
+}
+/*===Левый отступ иконок и ссылок===*/
+.icon-links{
+	padding-left: 30px;
+}
+/*===Параметры последнего контейнера===*/
+.last-container{
+	border: none;
+	box-shadow: none;
+}
+/*===Отступы текста низ===*/
+.footer-link{
+	padding: 40px 0;
+}
+/*===Цвет ссылки в тексте низ===*/
+.footer-link a{
+	color:black;
+}
