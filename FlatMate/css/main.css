@@ -1,0 +1,598 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.headerbackground{
+	 background: url('../img/topphoto.png') no-repeat;
+	 background-size: 100%;
+	 height: 705px;
+}
+/*==========Головной контейнер=======*/
+.headercontainer{	
+	width: 892px;
+	height: 530px;
+	margin:0 auto;
+}
+
+/*==========Верхняя часть=======*/
+.upper{
+	display: flex;
+	width: 100%;
+	margin: auto;	
+	justify-content: space-between;
+	padding-top: 50px;
+}
+
+/*==========Правая верхняя часть=======*/
+.upper-right{
+	display:flex;
+	align-items:center;
+}
+
+/*==========Левая верхняя часть=======*/
+.upper-left{
+	display:flex;
+	align-items:center;
+}
+
+/*==========Заголовок Flate Mate=======*/
+.upper-left h1{
+	color:#efefef;
+	font-family: Roboto;
+	padding-left: 20px;
+	font-size: 1.6em;
+}
+
+/*==========Круг зеленый верх=======*/
+.cirle{
+	height: 26px;
+	width: 26px;
+	
+}
+
+/*==========Есть аккаунт?=======*/
+.upper-right p{
+	font-family: Roboto;
+	font-style:italic;
+	font-weight:lighter;
+	font-size: 15px;
+	color:#848e9d;
+	padding-right:20px;
+}
+
+/*=========Кнопка Логин верх =======*/
+.btn-login{
+	width: 66px;
+	height: 30px;
+	background-color:#3d4b60;
+	border-radius:5px;
+	border: none;
+	color:#aeb6c2;
+	font-size: 1.2em;
+	font-family: Roboto;
+}
+
+/*=========Левая часть контента =======*/
+.headercontent{
+	color:#fff;
+	align-items: center;
+	width: 59%;
+	display: inline-block;
+	padding-top: 171px;
+}
+.headercontent h2{
+	font-family: RobotoSlab;
+	font-size: 2.4em;
+	padding-bottom: 50px;
+}
+
+.headercontent p, h2{
+	text-align: left;
+}
+.headercontent p{
+	padding-bottom: 50px;
+	font-size: 1.6em;
+	font-family: Roboto;
+	color:#c2cfe2;
+	line-height: 1.5;
+}
+.btn-readmore{
+	border-radius:5px;
+	border: none;
+	color:#fff;
+	background-color:#67bf95;
+	width:200px;
+	height:60px;
+	font-family: Roboto Regular;
+	font-size: 2.2em;
+}
+
+/*=========Правая часть(картинка чата) =======*/
+.headercontent-image{
+	float: right;
+	padding-top: 185px;
+	padding-right:30px;
+
+}
+/*=========Белый контейнер верх =======*/
+.headerwhite-container{
+	width: 892px;
+	height: 390px;
+	margin:0 auto;
+	display:flex;
+	align-items: center;
+}
+.header-white-picture{
+	display:flex;
+	width:180px;
+	height:200px;
+}
+.header-white-text h3{
+	font-size: 2.2em;
+	font-family: RobotoSlab;
+}
+.header-white-text{
+	width:100%;
+	text-align: justify;
+	line-height: 2;
+	padding-left: 65px;
+	color:#4b596c;
+	font-size: 1.27em;
+}
+.header-white-text p{
+	font-family: Roboto;
+}
+
+.header-white-link p{
+	padding-left:86px;
+}
+.gp{
+	padding-bottom:20px;
+}
+/*========= Зеленый контейнер =======*/
+.headergreen{
+	background-color: #52ad81;
+	height: 620px;
+	width: 100%;
+}
+
+.headergreen-container{
+	margin:0 auto;
+	height: 100%;
+	width: 892px;
+}
+
+.headergreen-text{
+	color:white;
+	text-align: left;
+	padding-top: 85px;
+
+}
+.headergreen-text h4{
+	font-size: 3.55em;
+	font-family: Roboto;
+
+}
+.headergreen-text h4,p{
+	line-height: 2;
+}
+.headergreen-text p{
+	font-size: 1.9em;
+	padding-left: 10px;
+	color:#b5dcc9;
+	font-family: RobotoThin;
+
+}
+.wndw{
+	height:360px;
+	width: 100%;
+	padding-top: 12px;
+	margin-left:0px;
+}
+
+/*========= Белый контейнер середина =======*/
+.middle{
+	background-color: white;
+	height: 1020px;
+	width: 100%;
+}
+.middlecontainer{
+	margin:0 auto;
+	width: 892px;
+	height: 1020px;
+}
+.middle-list{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.middle-text{
+	text-align: center;
+	line-height: 2;
+	
+
+}
+.middle-text p{
+	margin-top: 0;
+	padding-bottom:30px;
+	color:#858b93;
+	font-size: 1.39em;
+}
+.middle-text h5{
+	font-size: 25pt;
+	padding-top: 120px;
+	margin-bottom: 0;
+	font-family: Roboto ;
+	font-weight: 600;
+	color:#37414e;
+	
+}
+.middle-list ul{
+	text-align: center;
+	height: 470px;
+}
+
+.txt{
+ 	background-color: #e9eef3;
+	font-size: 1.9em;
+	padding-bottom: 45px;
+	color:#6d737b;
+
+}
+.txt1{
+	color:#4b596c;
+	background-color: #e9eef3;
+	padding:35px;
+	font-size: 2.15em;
+	font-family: Roboto;
+	font-weight: 700;
+}
+.txt2{
+	color: #58ad52;
+	background-color: #e9eef3;
+	padding:35px;
+	font-size: 2.15em;
+	font-family: Roboto;
+	font-weight: 700;
+
+}
+.txt3{
+	color: #52a1ad;
+	background-color: #e9eef3;
+	padding:35px;
+	font-size: 2.15em;
+	font-family: Roboto;
+	font-weight: 700;
+
+
+
+}
+
+.free{
+	width: 250px;
+	height: 470px;
+	list-style-type: none;
+	padding-left: 0px;
+	
+}
+
+.greyfree{
+	background-color: #4b596c;
+	height: 60px;
+	color:white;
+	font-size: 2.15em;
+}
+/*========= Желтый круг =======*/
+.yellow{
+	position: relative;
+	height: 46px;
+	width: 46px;
+    left: -25px;
+    top: -25px;
+}
+.Professional{
+	width: 250px;
+	height: 470px;
+	list-style-type: none;
+	position: relative;
+    left: 40px;
+
+}
+.greenprofessional{
+	background-color: #58ad52;
+	height: 60px;
+	color:white;
+	font-size: 2.15em;
+
+}
+.Enterprise{
+	width: 250px;
+	height: 470px;
+	list-style-type: none;
+
+}
+.blueenterprise{
+	background-color: #52a1ad;
+	height: 60px;
+	color:white;
+	font-size: 2.15em;
+
+}	
+/*========= Кнопки белого контейнера =======*/
+.middle-menu{
+	width: 892px;
+	position: relative;
+    top: 80px;
+  }
+.middle-menu ul{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	padding:0;
+}
+
+.btn-singup{
+	background-color: #4b596c;
+	border: none;
+	width: 250px;
+	height: 60px;
+	color:white;
+	font-size: 2.15em;
+	font-family: Roboto;
+	font-weight: 500;
+}
+.btn-buynow{
+	background-color:  #58ad52;
+	border: none;
+	width: 250px;
+	height: 60px;
+	color:white;
+	font-size: 2.15em;
+	font-family: Roboto;
+	font-weight: 500;
+
+}
+.btn-buynow2{
+	background-color: #52a1ad;
+	border: none;
+	width: 250px;
+	height: 60px;
+	color:white;
+	font-size: 2.15em;
+	font-family: Roboto;
+	font-weight: 500;
+}
+/*========= Серый футер середины =======*/
+
+.grey-middle-bottom{
+	height: 135px;
+	width: 100%;
+	background-color: #e9eaed;
+}
+.middle-bottom{
+	height: 100%;
+	width: 892px;
+	margin:0 auto;
+	text-align: center;
+}
+
+.middle-bottom p{
+	padding-top: 27px;
+	font-size: 2.6em;
+	color:#4b596c;
+	font-family: Roboto;
+	font-weight: bold;
+
+}
+/*========= Фото видео =======*/
+.video{
+	height:725px;
+	padding:0;
+	margin:0;
+}
+.video img{
+	width: 100%;
+	height:725px;
+	padding:0;
+	margin:0;
+}
+/*========= Футер с серым фоном=======*/
+.copyright-footer{
+	background-color: #2d3136;
+	margin:0;
+	padding:0;
+	height: 915px;
+	width: 100%;
+}
+/*========= Контейнер =======*/
+.copyright-container{
+	width: 892px;
+	height: 100%;
+	margin:0 auto;
+
+}
+/*========= Фото письмо =======*/
+.picture-letter p{
+	text-align: center;
+	padding-top: 94px;
+	margin:0;
+}
+.star{
+	color:#be393b;
+}
+.info{
+	color:#d7d7d7;
+	float:left;
+	font-size: 2.2em;
+}
+.info sup{
+	margin-left: -5px;
+}
+.info b{
+	font-weight: 500;
+	font-family: Roboto;
+}
+.massage{
+	color:#d7d7d7;
+	font-size: 2.22em;
+}
+.massage sup{
+	margin-left: -5px;
+}
+.massage b{
+	font-weight: 500;
+	font-family: Roboto;
+}
+.input-name {
+	border-radius:5px;
+	border:1px solid #4c4f53;
+	height: 75px;
+	width: 363px;
+	background: transparent;
+	margin-bottom: 40px;
+	font-size: 0.9em;
+	color: #d7d7d7;
+	padding-left: 10px;
+}
+.input-name:focus{
+	border-color:#743538;
+	
+}
+
+.input-email{
+	border-radius:5px;
+	border:1px solid #4c4f53;
+	height: 75px;
+	width: 363px;
+	background: transparent;
+	font-size: 0.9em;
+	color: #d7d7d7;
+	padding-left: 10px;
+}
+
+.input-email:focus{
+	border-color:#743538;
+	
+}
+
+/*========= Поле ввода текста =======*/
+.textarea-massage{
+	border-radius:5px;
+	border:1px solid #4c4f53;
+	height: 255px;
+	width: 435px;
+	background: transparent;
+	resize: none;
+	font-size: 0.9em;
+	color: #d7d7d7;
+	padding-left: 10px;
+	padding-top: 15px;
+}
+
+.textarea-massage:focus{
+	border-color:#743538;
+	
+}
+
+.massage{
+	float: right;
+}
+/*========= Кнопка отправить =======*/
+.btn-send{
+	border:none;
+	background-color: #be393b;
+	border-radius:5px;
+	color:white;
+	height:70px;
+	width: 175px;
+	float: right;
+	margin-top:70px;
+	font-size: 1.1em;
+	font-weight: 700;
+	font-family: Roboto;
+
+}
+.copyright-link{
+	background-color: #2a2d33;
+	height: 100px;
+ 	width: 100%;
+}
+.copyright-link-container{
+	width: 892px;
+	height: 100px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+/*========= Ссылки твит фэйс =======*/
+.line{
+	color: #fff;
+	padding-left: 13px;
+}
+
+
+.link-right{
+	display: flex;
+	align-items: center;
+
+}
+.link-right p{
+	padding-left: 40px;
+}
+
+.link-left{
+	display: flex;
+	align-items: center;
+}
+.link-left img{
+	height: 26px;
+	width: 26px;
+}
+
+.link-left h6{
+	color:white;
+	padding-left: 15px;
+	font-size: 15pt;
+	font-family: Roboto;
+}
+
+.design{
+	color:#888889;
+	padding-left: 13px;
+	font-family: Roboto;
+}
