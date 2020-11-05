@@ -1,0 +1,433 @@
+/*===Обнуление===*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+/*===Отступы логотипа===*/
+.header img{
+	padding: 25px 30px 15px;
+}
+/*===Параметры фото computer===*/
+.contact{
+	opacity: 0.95;
+	background-image: url("../img/computer.png");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+}
+/*===Фон подложка фото computer===*/
+.contact-bg-color{
+	background-color:#15a4fa;
+	position: relative;
+}
+/*===Параметры расположения контента computer===*/
+.computer-text{
+	color: white;
+	position: relative;
+	padding-bottom: 280px;
+}
+.position{
+	position: relative;
+}
+.position a{
+	border: none;
+	box-shadow: none;
+}
+/*===Линия фото computer===*/
+.computer-text h1{
+	font-size:100pt;
+	text-transform: uppercase;
+	margin: 0;
+	padding:200px 0 30px;
+	font-weight: bold;
+}
+/*===Переопределение позиций для h1 и hr===*/
+	@media (max-width:768px){
+		.computer-text h1{
+			font-size: 80pt;
+		}
+		.computer-text hr{
+			width: 500px;
+		}	
+}
+	@media (max-width:560px){
+		.computer-text h1{
+			font-size: 60pt;
+		}
+		.computer-text hr{
+			width: 400px;
+		}	
+}
+	@media (max-width:460px){
+		.computer-text h1{
+			font-size: 40pt;
+		}
+		.computer-text hr{
+			width: 200px;
+		}	
+}
+/*===Параметры текаста под линией===*/
+.computer-text p{
+	padding:40px 0 60px;
+	font-size: 20pt;
+	margin-bottom: 0;
+}
+/*===Линия фото computer===*/
+.computer-text hr{
+	height: 2px;
+	color:#15a4fa;
+	border: none;
+	margin: 0 auto;
+}
+/*===Параметры кнопки computer===*/
+.computer-button{
+	background-color: #15a4fa;
+	width: 182px;
+	height: 60px;
+	color: white;
+	border: none;
+	border-radius:4px; 
+	font-size: 2pt;
+}
+/*===Фон описания под фото===*/
+.description{
+	background-color: #f6f9f9;
+}
+/*===Отступы заголовока описания===*/
+.description h2{
+	padding: 75px 0 30px;
+	margin-bottom: 0;
+}
+/*===Отступы текста описания===*/
+.description p{
+	margin-bottom: 0;
+	padding-bottom: 105px;
+	color: #909090;
+}
+/*===Отступы иконок===*/
+.description-icons{
+	padding-top:65px;
+}
+/*===Отступы заголовков под иконками===*/
+.description-icons h3{
+	padding:32px 0 20px;
+	margin-bottom: 0;
+	font-size: 22pt;
+}
+/*===Параметры текста под иконками===*/
+.description-icons p{
+	font-size: 15px;
+	padding:0 30px 60px;
+	margin-bottom: 0;
+	text-align: center;
+	color: #909090;
+}
+/*===Цвет фона examples===*/
+.examples{
+	background-color: #f6f9f9;
+}
+/*===Параметры заголовков examples===*/
+.examples h4{
+	font-size:35pt;
+	margin-bottom: 0;
+	padding-top: 80px;
+}
+/*===Параметры текста examples===*/
+.examples p{
+	font-size:15pt;
+	margin-bottom: 0;
+	padding:20px 0 80px;
+	color: #909090;
+}
+/*===Отступы изображений examples===*/
+.examples img{
+	width: 100%;
+}
+/*===Нижний отступ от изображений===*/
+.examples-photo{
+	padding-bottom: 87px;
+}
+/*===Изменение прозрачности при наведенни на фото===*/
+.second-photo:hover .change-color{
+	opacity: 0.3;
+}
+/*===Видимость ссылок при наведении на фото===*/
+.second-photo:hover .links{
+	opacity: 1;
+}
+/*===Видимость ссылок при наведении на них===*/
+.link-picture:hover{
+	opacity: 0.5;
+}
+/*===Фон за фото===*/
+.second-photo{
+	position: relative;
+	margin-bottom: 30px;
+	background-color:#2cacf7;
+}
+/*===Фон подложка фото massage===*/
+.message-bg-color{
+	background-color:#2a364b;
+	position: relative;
+}
+/*===Отступ между ссылками на фото===*/
+.links a{
+	padding:10px;
+}
+/*===Позиция ссылок на фото===*/
+.links{
+	position: absolute;
+	top:40%;
+	left:40%;
+	opacity: 0;
+}
+/*===Переопределение позиций для ссылок на картинках===*/
+	@media (min-width:768px) and (max-width:994px){
+		.links{
+			top:30%;
+			left:30%;
+		}	
+}
+/*===Переопределение позиций для ссылок на картинках===*/
+	@media (min-width:270px) and (max-width:320px){
+		.links{
+			top:40%;
+			left:33%;
+		}	
+}
+/*===Параметры фото massage===*/
+.message-photo{
+	position: absolute;
+	background-image: url("../img/road.png");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.1;
+}
+/*===Параметры расположения контента message===*/
+.message-text{
+  	color: white;
+}
+.input-position{
+	position: relative;
+
+}
+/*===Размеры заголовка massage===*/
+.message-text h5{
+	font-size: 41pt;
+	margin-bottom: 0;
+}
+/*===Параметры параграфа message===*/
+.message-text p{
+	font-size: 15pt;
+	padding:15px 0 50px;
+	margin-bottom: 0;
+}
+/*===Расположение форм и контента message===*/
+.message-position{
+	justify-content: center;
+}
+/*===Параметры окон ввода message===*/
+.message-input input{
+	background:none;
+	border-color:#909090;
+}
+/*===Параметры текстовой зоны message===*/
+.footer-form{
+	background:none;
+	border-color:#909090;
+	color: white;
+}
+/*===Отступы от textarea и нижней кнопки===*/
+.area-position{
+	padding-top: 74px;
+	padding-bottom: 125px;
+}
+/*===Параметры текстовой зоны message при наведении===*/
+.footer-form:focus{
+	background:none;
+	color: white;
+	border-color: white;
+	box-shadow: none;
+	text-decoration-color: white;
+}
+/*===Цвет текста для checkbox===*/
+.form-check-label{
+	color:#909090;
+}
+/*===Размеры кнопки message===*/
+.btn-send{
+	width: 142px;
+	height: 49px;
+}
+/*===Положение кнопки send message===*/
+.send-button{
+	text-align: right;
+}
+/*===Переопределение позиций для кнопки send message===*/
+	@media (max-width:350px){
+		.send-button{
+			text-align: center;
+			padding-top: 10px;
+		}	
+}
+/*===Отступы в footer===*/
+.footer-content{
+	font-size: 15pt;
+	color: #999999;
+	padding:25px 0 25px;
+}
+/*===Отступы надписи копирайт===*/
+.footer-content p{
+	margin:5px 0 0 ;
+}
+/*===Расположение икон footer===*/
+.footer-icons{
+	text-align: right;
+}
+/*===Отмена подчеркаиния у ссылок===*/
+.footer-icons a{
+	text-decoration:none;
+}
+/*===Переопределение позиций для текста footer===*/
+	@media (max-width:768px){
+		.footer-content p{
+			text-align: center;
+		}	
+}
+/*===Переопределение позиций для икон footer===*/
+	@media (max-width:768px){
+		.footer-icons{
+			text-align: center;
+		}	
+}
+/*===Отступ от check поля===*/
+.form-check{
+	padding-left: 0;
+}
+/*===Скрываем стандартный check===*/
+.form-check input{
+	position: absolute;
+  	z-index: -1;
+  	opacity: 0;
+}
+/*===Параметры нового поля check===*/
+.form-check-input+label::before{
+  content:'';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #99a0a9;
+  border-radius: 3px;
+  margin-right:15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  margin-bottom: -2px;
+}
+/*===Оформление при нажатии===*/
+.form-check-input:checked+label::before {
+  border-color: none;
+  background-color: #99a0a9;
+ }
+/*Модальные окна*/
+.modal {
+    display: none; /* Скрывает окно */
+    position: fixed; /* фиксированное положение */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+/*Параметры расположения модального окна обратной связи*/
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+}
+/*Кнопка закрытия*/
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+/*Параметры кнопки х при наведении*/
+.close:hover,
+.close:focus {
+    color: black;
+}
+/*Параметры хэдера модального окна обратной связи*/
+
+/*Цвет фона тела модального окна обратной связи*/
+.modal-body input:focus{
+	color:black;
+	text-decoration-color: black;
+}
+/*Параметры футера модального окна обратной связи*/
+.modal-footer {
+    color: black;
+   
+}
+/*Параметры кнопки модального окна обратной связи*/
+.btn{
+	background-color: #2cacf7;
+	color: white;
+	border:none;
+}
+/*Параметры расположения модального окна "благодарности"*/
+.request{
+	position: fixed;
+	display: none;
+    z-index: 1; 
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;     
+}
+/*Параметры модального окна "благодарности"*/
+.modal-content{
+	padding:30px; 
+}
+/*Кнопка close окна благодарности*/
+.rqst{
+	background-color: #2cacf7;
+	color: white;
+	width: 142px;
+	height: 49px;
+	border: none;
+	background-color: #15a4fa;
+	border-radius:4px; 
+
+}
+/*Отмена рамки при наведении на кнопки*/
+button:active, button:focus {
+  outline: none !important;
+}
+/*Затемнение заднего фона(модальное окно)*/
+.block-show{
+	background-color:rgba(0,0,0,0.5);
+	
+}
+/*Кнопка вниз со скролом*/
+.scrollBottom{
+	text-decoration:none;
+	color: white;
+}
+/*Строка с кнопкой*/
+.scroll{
+	padding-bottom: 120px;
+}
