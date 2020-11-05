@@ -1,1 +1,1 @@
-<a href="https://danatskiy.github.io/first_project/Resume/index.html">Смотреть все проекты</a>
+<a href="https://danatskiy.github.io/resume_project/Resume/index.html">Смотреть все проекты</a>
