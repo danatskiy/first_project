@@ -1,0 +1,32 @@
+body{
+	height: 100vh;
+}
+.section{
+	height: 100%;
+}
+.bgcolor{
+	position: relative;
+	background-color: rgba(28, 28,28,0.9);
+	height: 100%;	
+}
+.row{
+    padding-top: 50px;
+}
+.button{
+	position: absolute;
+    top: 60%;
+    border:1px solid;
+}
+
+.card{
+	background-color: black;
+	border: none;
+	align-items: center;
+}
+
+.card:hover img{
+	opacity: 0.5;
+}
+
+
+
