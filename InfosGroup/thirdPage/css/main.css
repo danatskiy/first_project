@@ -1,0 +1,120 @@
+/*Параметры страницы*/
+.body,html{
+	height: 100%;
+}
+/*Фон и закругление кнопки*/
+.infos-title{
+	background-color: #005fff;
+	border-radius: 20px;
+}
+.header{
+	padding-bottom: 150px;
+}
+	@media (max-width: 990px) {
+		.header{padding-bottom: 20px;}
+	}
+/*Отступы в меню*/
+.nav-item{
+	padding:0 20px 0;
+}
+/*Прижать к правому краю первая картинка*/
+.man{
+	float: right;
+}
+.content{
+	justify-content:space-around;
+}
+	@media (max-width: 952px) {
+		.nav-item{padding:0}
+	}
+	@media (max-width: 767px) {
+		.examples{padding-bottom: 40px;text-align: center;}
+	}
+	@media (max-width: 767px) {
+		h2,h3{font-size: 20px;}
+	}
+.show{
+	
+	height: 100%;
+	width: 100%;
+	background-color:rgba(0,0,0,0.5);
+}
+.menuBg{
+	position: absolute;
+	z-index: 1;
+}
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 25%;
+}
+	@media (max-width:980px) {
+		.modal-content {width: 50%;}
+	}
+.btn{
+
+	border:none;
+	border-radius: 50px;
+}
+.block-show{
+	background-color:rgba(0,0,0,0.5);
+}
+.menuButton{
+	border-radius: 50px;
+	margin: 0 40% 0 0;
+}
+.buttonStyle {
+	padding-left: 25px;
+}
+.modal-footer,.modal-header{
+	border: none;
+}
+.modal-footer{
+	justify-content: center;	
+}
+.form-control{
+	border-radius: 50px;
+	border:none;
+	background-color: #f2f2f2;
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 70%;
+  display: none;
+  position: absolute; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0;
+  right: 0; /*выкатывается справа*/
+  background-color: white;
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 40px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.modal {
+    display: none; /* Скрывает окно */
+    position: fixed; /* фиксированное положение */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}

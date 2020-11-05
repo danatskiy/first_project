@@ -1,0 +1,263 @@
+body,html{
+	height: 100%;
+	width: 100%;
+}
+.infos-title{
+	background-color: #005fff;
+	border-radius: 20px;
+}
+.main-picture{
+	background-image: url(../img/mainPicture.png);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main-picture-text{
+	font-weight: 600;
+	font-size: 40px;
+}
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.nav-item{
+	padding:0 20px 0;
+}
+.header-photo{
+	position: relative;
+}
+.letter{
+	display: inline-flex;
+}
+.ring{
+	display: inline-flex;
+}
+.dot{
+	display: inline-flex;
+}
+.icon img{
+	width:100%;
+}
+.our-customer img{
+	width: 100%;
+}
+.logo img{
+	width: 80%;
+}
+.letter-email a{
+	text-decoration: none;
+	color: black;
+}
+.ring a{
+	text-decoration: none;
+	color: black;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 70%;
+  display: none;
+  position: absolute; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0;
+  right: 0; /*выкатывается справа*/
+  background-color: white;
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 40px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: grey;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+.show{
+	
+	height: 100%;
+	width: 100%;
+	background-color:rgba(0,0,0,0.5);
+}
+.our-customer{
+	padding:230px 0 230px;
+}
+.our-partners{
+	padding-bottom: 160px
+}
+.copyright p{
+	float: right;
+}
+.letter-email ul>li{
+	list-style: none;
+	padding-bottom: 10px;
+}
+.logoP img{
+	width: 100%;
+}
+.logo img{
+	width: 50%;
+}
+.logo{
+	text-align: center;
+}
+.menuBg{
+	position: absolute;
+	z-index: 1;
+}
+.about{
+	padding: 150px 25px 150px;
+}
+
+	@media (max-width: 475px) {
+		.site-logo {font-size:25px;}
+	}
+	
+	@media screen and (max-width: 579px) {
+		.moreInfo{text-align: center;}
+	}
+	@media screen and (max-width: 579px) {
+		
+		.customerPictures img{width:50%;}
+		.customerPictures {text-align: center;}
+		
+		.our-customer {padding:50px 0 50px;}
+
+		.our-partners{padding-bottom: 50px;}
+
+		.brand img{width: 50%;}
+		.brand{text-align: center;}
+
+		.icon img{width: 50%}
+		.icon{text-align: center;}
+
+		.logo{width: 55%;}
+
+		.copyright p{float:none; text-align: center;}
+
+	}
+
+	@media (max-width: 952px) {
+		.nav-item{padding:0}
+	}
+
+	@media (max-width: 580px) {
+		.bgOpacity{
+			background-color: rgba(0,0,0,0.5);
+    		position: relative;}
+    	.main-picture-text{
+    		font-weight: 400;
+			font-size: 20px;
+    	}
+	}
+
+	@media (max-width:320px) {
+		.text-center{font-size: 10px}
+	}
+
+	@media (max-width:980px) {
+		.about{padding: 75px 20px 75px;}
+	}
+
+/*Модальные окна*/
+.modal {
+    display: none; /* Скрывает окно */
+    position: fixed; /* фиксированное положение */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+/*Параметры расположения модального окна обратной связи*/
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 25%;
+}
+	@media (max-width:980px) {
+		.modal-content {width: 50%;}
+	}
+/*Кнопка закрытия*/
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+/*Параметры кнопки х при наведении*/
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+/*Цвет фона тела модального окна обратной связи*/
+.modal-body input:focus{
+	color:black;
+	text-decoration-color: black;
+}
+/*Параметры кнопки модального окна обратной связи*/
+.btn{
+	color: white;
+	border:none;
+	border-radius: 50px;
+}
+.block-show{
+	background-color:rgba(0,0,0,0.5);
+}
+.menuButton{
+	border-radius: 50px;
+	margin-right: 33px;
+}
+.modal-footer,.modal-header{
+	border: none;
+}
+.modal-footer{
+	justify-content: flex-start;	
+}
+.form-control{
+	border-radius: 50px;
+	border:none;
+	background-color: #f2f2f2;
+}
+.menuButton{
+	border-radius: 50px;
+	margin: 0 40% 0 0;
+}
+.buttonStyle {
+	padding-left: 25px;
+}
+.modal-footer{
+	justify-content: center;	
+}
+
