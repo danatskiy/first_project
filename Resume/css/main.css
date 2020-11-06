@@ -1,16 +1,14 @@
-body{
-	height: 100vh;
-}
-.section{
+.field{
 	height: 100%;
+	position: relative;
 }
 .bgcolor{
 	position: relative;
 	background-color: rgba(28, 28,28,0.9);
 	height: 100%;	
 }
-.row{
-    padding-top: 50px;
+.first{
+	padding-top: 30px;
 }
 .button{
 	position: absolute;
@@ -27,6 +25,13 @@ body{
 .card:hover img{
 	opacity: 0.5;
 }
-
-
-
+.second{
+	padding-bottom: 20px;
+}
+	@media(min-width:768px){
+		body{ height: 100vh;
+	}
+}
+.photo{
+	padding-bottom: 30px;
+}
