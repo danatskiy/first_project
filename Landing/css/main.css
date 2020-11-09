@@ -369,8 +369,6 @@ body, html {
 .close:focus {
     color: black;
 }
-/*Параметры хэдера модального окна обратной связи*/
-
 /*Цвет фона тела модального окна обратной связи*/
 .modal-body input:focus{
 	color:black;
