@@ -223,6 +223,10 @@ body, html {
 	font-size: 41pt;
 	margin-bottom: 0;
 }
+	@media (max-width:390px){
+		.message-text h5{
+			font-size: 20pt;
+		}
 /*===Параметры параграфа message===*/
 .message-text p{
 	font-size: 15pt;
