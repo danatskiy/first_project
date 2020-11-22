@@ -6,26 +6,8 @@ body{
 .nav-panel{
 	padding-top: 120px;
 	margin-left: 0px;
-}
-/*параметры кнопок*/
-.slider-btn{
-  height: 3.75rem;
-  width: 3.75rem;
-  border: 1px solid #C8D9FB;
-  color: #6e6e6e;
-  text-align: center;
-  line-height: 30px;
-  padding: 0.7rem;
-  margin:20px;
-  font-weight: 100;
-}
-/*размер стрелок*/
-.slider-btn span{
-	font-size: 50px;
-}
-/*отступ кнопок от правого края*/
-.next{
-	margin-right: auto;
+	align-items: baseline;
+	padding-bottom: 40px;
 }
 /*поведение при наведении */
 .slider-btn:hover{
@@ -33,6 +15,15 @@ body{
   color: #fff;
   background-color:#C8D9FB;
   border: none;
+}
+.button{
+	padding: 0 20px;
+}
+.button img:hover{
+	cursor: pointer;
+	color: #fff;
+	background-color:#C8D9FB;
+	border: none;
 }
 /*флекс для кнопок(горизонт)*/
 .slide-control{
@@ -56,11 +47,18 @@ span{
 	list-style: none;
 	margin-right: -5px;
 	background-color: #C8D9FB;
+	transform:
 }
 /*флекс для заголовка и выравнивание*/
 .slide-title{
 	display: flex;
 	align-items: center;
+	padding-left: 20px;
+}
+.slide-title h1{
+	font-style: normal;
+	font-weight: 700;
+	color: #527CCD;
 }
 /*флекс для блока nav+ позиционирование*/
 .slider-nav{
@@ -80,6 +78,7 @@ span{
 	display: inline-block;
 	cursor: pointer;
 }
+
 /*параметры параграфа дата*/
 .date{
 	padding: 10px 0;
@@ -102,6 +101,7 @@ span{
 	color: #527CCD;
 	font-size: 12px;
 	line-height: 22px;
+	margin-bottom: 20px !important;
 }
 /*отмена отступов "тела" карточки*/
 .card-body{
@@ -115,6 +115,8 @@ span{
 .active{
 	border: 1px solid #527CCD;
 }
+
+
 /*параметры блока карточный список*/
 .card-list{
 	width: 2000px;
@@ -124,6 +126,7 @@ span{
 .view-zone{
     position: relative;
     overflow: hidden;
+	margin-bottom: 20px;
 }
 	@media (max-width:415px) {
 		.slide-item{

@@ -288,60 +288,77 @@ for (let i = 1; i <= elCountOnScreen; i++) {
 }
 
 //описываем функцию (одинаковая высота)
+window.onload = function() {
+
+
+    //запускаем функцию
+    sameHeightText();
+    //запускаем функцию
+    sameHeight();
+}
+
+
 function sameHeightText() {
     //объявляем переменную mainDiv присваиваем ей значение(массива) с классом card
-    var mainDiv = document.getElementsByClassName("card-title");
+    var mainDiv = document.querySelectorAll(".card-title");
     //объявляем переменную maxHeight присваиваем ей значение 0
     var maxHeight = 0;
     //перебираем массив
     //начальное значение i=0
     //конечное значение i меньше длинны массива
     //i++ шаг прирощения (+1)
-    for (var i = 0; i < mainDiv.length; ++i) {
+
+    mainDiv.forEach(function (el) {
         //если maxHeight меньше значения массива(clientHeight содержит высоту нашего div)
-        if (maxHeight < mainDiv[i].clientHeight) {
+        if (maxHeight < el.clientHeight) {
             //то maxHeight приравниваем значиение массива(clientHeight содержит высоту нашего div)
-            maxHeight = mainDiv[i].clientHeight;
+            maxHeight = el.clientHeight;
         }
-    }
+    })
+
     //перебираем массив
     //начальное значение i=0
     //конечное значение i меньше длинны массива(clientHeight содержит высоту нашего div)
     //i++ шаг прирощения (+1)
     for (var i = 0; i < mainDiv.length; ++i) {
         //для значений массива задаем стиль с высотой и приравниваем к значению переменной maxHeight
-        mainDiv[i].style.height = maxHeight + "px";
+        mainDiv[i].style.minHeight = maxHeight + "px";
     }
 }
-//запускаем функцию
-sameHeightText();
 
 //описываем функцию (одинаковая высота)
 function sameHeight() {
     //объявляем переменную mainDiv присваиваем ей значение(массива) с классом card
-    var mainDiv = document.getElementsByClassName("card");
+    var mainDiv = document.getElementsByClassName("card-text");
     //объявляем переменную maxHeight присваиваем ей значение 0
     var maxHeight = 0;
+    let newHeight = 0;
     //перебираем массив
     //начальное значение i=0
     //конечное значение i меньше длинны массива
     //i++ шаг прирощения (+1)
-    for (var i = 0; i < mainDiv.length; ++i) {
+    for (var i = 0; i < mainDiv.length; ++i){
         //если maxHeight меньше значения массива(clientHeight содержит высоту нашего div)
         if (maxHeight < mainDiv[i].clientHeight) {
             //то maxHeight приравниваем значиение массива(clientHeight содержит высоту нашего div)
             maxHeight = mainDiv[i].clientHeight;
         }
+        console.log('='+mainDiv[i].clientHeight);
     }
     //перебираем массив
     //начальное значение i=0
     //конечное значение i меньше длинны массива(clientHeight содержит высоту нашего div)
     //i++ шаг прирощения (+1)
     for (var i = 0; i < mainDiv.length; ++i) {
+        newHeight = maxHeight;
         //для значений массива задаем стиль с высотой и приравниваем к значению переменной maxHeight
-        mainDiv[i].style.height = maxHeight + 40 +"px";
+        mainDiv[i].style.minHeight =newHeight +"px";
     }
 }
-//запускаем функцию
-sameHeight();
+
+window.onresize = function initPage() {
+
+
+
+};
 
