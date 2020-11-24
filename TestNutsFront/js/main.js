@@ -134,10 +134,11 @@ function goNext(dir) {
         //то значению присваиваем 0
         shiftI = 0;
     }
-    console.log(currentId);
-    console.log(massive);
+    console.log('===========');
+    console.log(elCountOnScreen);
+    console.log('===========')
     //обявляем переменную shiftIPx и присваиваем ей значение shiftI *
-    let shiftIPx = shiftI * (currentBlockWidth+40);
+    let shiftIPx = shiftI * (currentBlockWidth + 40);
 
     console.log(itemIsVisible);
     //если переменная itemIsVisible равна false
@@ -155,7 +156,7 @@ function goNext(dir) {
         let cardListBlock = document.querySelector('.card-list')
         //смещение
         //переменной добавляем атрибут. имя style. значение влево - значение переменной
-        cardListBlock.setAttribute('style', 'left: -' + shiftIPx+ 'px');
+        cardListBlock.setAttribute('style', 'left: -' + shiftIPx + 'px');
     }
     console.log(shiftIPx);
 }
@@ -287,17 +288,15 @@ for (let i = 1; i <= elCountOnScreen; i++) {
     massive.push(i);
 }
 
-//описываем функцию (одинаковая высота)
-window.onload = function() {
-
-
+//описываем функцию (одинаковая высота) при загрзке окна
+window.onload = function () {
     //запускаем функцию
     sameHeightText();
     //запускаем функцию
     sameHeight();
 }
 
-
+//описываем функцию (одинаковая высота для текста в карточках)
 function sameHeightText() {
     //объявляем переменную mainDiv присваиваем ей значение(массива) с классом card
     var mainDiv = document.querySelectorAll(".card-title");
@@ -337,13 +336,13 @@ function sameHeight() {
     //начальное значение i=0
     //конечное значение i меньше длинны массива
     //i++ шаг прирощения (+1)
-    for (var i = 0; i < mainDiv.length; ++i){
+    for (var i = 0; i < mainDiv.length; ++i) {
         //если maxHeight меньше значения массива(clientHeight содержит высоту нашего div)
         if (maxHeight < mainDiv[i].clientHeight) {
             //то maxHeight приравниваем значиение массива(clientHeight содержит высоту нашего div)
             maxHeight = mainDiv[i].clientHeight;
         }
-        console.log('='+mainDiv[i].clientHeight);
+        console.log('=' + mainDiv[i].clientHeight);
     }
     //перебираем массив
     //начальное значение i=0
@@ -352,13 +351,96 @@ function sameHeight() {
     for (var i = 0; i < mainDiv.length; ++i) {
         newHeight = maxHeight;
         //для значений массива задаем стиль с высотой и приравниваем к значению переменной maxHeight
-        mainDiv[i].style.minHeight =newHeight +"px";
+        mainDiv[i].style.minHeight = newHeight + "px";
     }
 }
 
-window.onresize = function initPage() {
+
+function initPage() {
+    clearActiveIndicator();
+    clearActive();
+    clearIntervalCustom();
+    currentId = 1;
+
+    //запускаем функцию
+    sameHeightText();
+    //запускаем функцию
+    sameHeight();
+
+    //объявляем переменную и присваиваем значение 1(количество элементов на экране)
+    elCountOnScreen = 1;
+//объявляем переменную и присваиваем значение 260(ширина блока карточки)
+    minBlockWidth = 260;
+//объявляем переменную и присваиваем значение ширины экрана клиента(ширина экрана)
+    screenWidth = document.getElementById('vZWidth').offsetWidth;
+
+//объявляем переменную и присваиваем значение переменной  minBlockWidth
+    currentBlockWidth = minBlockWidth;
+
+//функция определения ширины экрана и количества карточек
+//объявляем функцию
+    function calcWidth() {
+        //если ширина экрана/4 больше либо равна ширине блока
+        if ((screenWidth / 4) >= minBlockWidth) {
+            //то количество карточек равно
+            elCountOnScreen = 4
+            //текущая ширина блока равна ширине экрана/4 минус
+            currentBlockWidth = ((screenWidth - 160) / 4)
+            return
+        }
+        //если ширина экрана/3 больше либо равна ширине блока
+        if ((screenWidth / 3) >= minBlockWidth) {
+            //то количество карточек равно
+            elCountOnScreen = 3
+            currentBlockWidth = ((screenWidth - 120) / 3)
+            return
+        }
+
+        //если ширина экрана/2 больше либо равна ширине блока
+        if ((screenWidth / 2) >= minBlockWidth) {
+            //то количество карточек равно
+            elCountOnScreen = 2
+            currentBlockWidth = ((screenWidth - 80) / 2)
+            return
+        }
+        //если ширина экрана/1 больше либо равна ширине блока
+        if ((screenWidth / 1) >= minBlockWidth) {
+            //то количество карточек равно
+            elCountOnScreen = 1
+            currentBlockWidth = (screenWidth - 40)
+            return
+        }
+        currentBlockWidth = screenWidth;
+
+    }
+
+//запускаем функцию
+    calcWidth();
+//определение ширины карточки
+//объявляем переменную и присваиваем ей значение блока с классом .card
+    let cardWidth = document.querySelectorAll('.card');
+//перебираем массив для каждой переменной cardWidth описываем функцию с параметром el
+    cardWidth.forEach(function (el) {
+        //параметру el с шириной присваиваем значение текущей ширины блока
+        el.style.width = currentBlockWidth + "px";
+    })
+
+//объявляем переменную и присваиваем значение равное массиву
+    massive = []
+//перебираем массив
+//начальное значение i=1
+//конечное значение i меньше либо равно elCountOnScreen(количество элементов на экране)
+//i++ шаг прирощения (+1)
+    for (let i = 1; i <= elCountOnScreen; i++) {
+        //добавляем значение i в массив
+        massive.push(i);
+    }
+    console.log(massive);
+    setActive();
+    setActiveIndicator();
+}
 
 
-
+window.onresize = function (event) {
+    initPage()
 };
-

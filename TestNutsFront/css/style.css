@@ -1,136 +1,147 @@
-/*стиль шрифта*/
-body{
-	font-family: Roboto;
+body {
+    font-family: Roboto;
 }
+
 /*паметры панели с заголовком,кнопками и индикаторами*/
-.nav-panel{
-	padding-top: 120px;
-	margin-left: 0px;
-	align-items: baseline;
-	padding-bottom: 40px;
+.nav-panel {
+    padding-top: 120px;
+    margin-left: 0px;
+    align-items: baseline;
+    padding-bottom: 40px;
 }
+
 /*поведение при наведении */
-.slider-btn:hover{
-  cursor: pointer;
-  color: #fff;
-  background-color:#C8D9FB;
-  border: none;
+.slider-btn:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #C8D9FB;
+    border: none;
 }
-.button{
-	padding: 0 20px;
+
+.button {
+    padding: 0 20px;
 }
-.button img:hover{
-	cursor: pointer;
-	color: #fff;
-	background-color:#C8D9FB;
-	border: none;
+
+.button img:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #C8D9FB;
+    border: none;
 }
+
 /*флекс для кнопок(горизонт)*/
-.slide-control{
-	display: flex;
-	justify-content: flex-end;
+.slide-control {
+    display: flex;
+    justify-content: flex-end;
 }
-/*оформление стрелок в кнопках*/
-span{
-	font-size: 30px;
-	color: #527CCD;
-}
+
 /*отступ блока индикатора от кнопок*/
-.slide-items{
-	padding-right: 40px;
+.slide-items {
+    padding-right: 40px;
 }
+
 /*оформление индикатора*/
-.slide-item{
-	display: inline-block;
-	height: 1px;
-	width: 60px;
-	list-style: none;
-	margin-right: -5px;
-	background-color: #C8D9FB;
-	transform:
+.slide-item {
+    display: inline-block;
+    height: 1px;
+    width: 60px;
+    list-style: none;
+    margin-right: -5px;
+    background-color: #C8D9FB;
 }
+
 /*флекс для заголовка и выравнивание*/
-.slide-title{
-	display: flex;
-	align-items: center;
-	padding-left: 20px;
+.slide-title {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
 }
-.slide-title h1{
-	font-style: normal;
-	font-weight: 700;
-	color: #527CCD;
+
+.slide-title h1 {
+    font-style: normal;
+    font-weight: 700;
+    color: #527CCD;
 }
+
 /*флекс для блока nav+ позиционирование*/
-.slider-nav{
-	display: flex;
+.slider-nav {
+    display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+
 /*параметры карточек*/
-.card{
-	float: left;
-	left:0;
-	border-radius: 0;
-	border: 1px solid  #C8D9FB;
-	padding:20px 20px 0;
-	margin:0 20px;
-	flex-grow: 1;
-	display: inline-block;
-	cursor: pointer;
+.card {
+    float: left;
+    left: 0;
+    border-radius: 0;
+    border: 1px solid #C8D9FB;
+    padding: 20px 20px 0;
+    margin: 0 20px;
+    flex-grow: 1;
+    display: inline-block;
+    cursor: pointer;
 }
 
 /*параметры параграфа дата*/
-.date{
-	padding: 10px 0;
-	font-size: 12px;
-	color: #527CCD;
-	opacity: 0.6;
-	margin-bottom: 0;
+.date {
+    padding: 10px 0;
+    font-size: 12px;
+    color: #527CCD;
+    opacity: 0.6;
+    margin-bottom: 0;
 }
+
 /*параметры заголовка карточек*/
-.card-title{
-	padding: 0 0 5px;
-	font-size: 16px;
-	line-height: 26px;
-	color: #527CCD;
-	font-weight: normal;
-	font-size: 16px;
+.card-title {
+    padding: 0 0 5px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #527CCD;
+    font-weight: normal;
+    font-size: 16px;
 }
+
 /*параметры параграфа карточек*/
-.card-text{
-	color: #527CCD;
-	font-size: 12px;
-	line-height: 22px;
-	margin-bottom: 20px !important;
+.card-text {
+    color: #527CCD;
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 20px !important;
 }
+
 /*отмена отступов "тела" карточки*/
-.card-body{
-	padding: 0;
+.card-body {
+    padding: 0;
 }
+
 /*поведение курсора при наведении на кнопки*/
-.cursor{
-	cursor: pointer;
+.cursor {
+    cursor: pointer;
 }
+
 /*оформление активной карты*/
-.active{
-	border: 1px solid #527CCD;
+.active {
+    border: 1px solid #527CCD;
 }
 
 
 /*параметры блока карточный список*/
-.card-list{
-	width: 2000px;
-	position: relative;
+.card-list {
+    width: 2000px;
+    position: relative;
 }
+
 /*параметры блока видимая зона(включает в себя карточный список и карточки)*/
-.view-zone{
+.view-zone {
     position: relative;
     overflow: hidden;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
-	@media (max-width:415px) {
-		.slide-item{
-			width: 30px;
-		}
-	}
+
+@media (max-width: 415px) {
+    .slide-item {
+        width: 30px;
+    }
+}
 
